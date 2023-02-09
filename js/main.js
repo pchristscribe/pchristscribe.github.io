@@ -1,34 +1,74 @@
-$(function(){
-	secondary = $( '#secondary' );
-	button = $( '.site-branding' ).find( '.secondary-toggle' );
+/* global KEEP */
 
-	// Enable menu toggle for small screens.
-	( function() {
-		var menu, widgets, social;
-		if ( ! secondary || ! button ) {
-			return;
-		}
+window.addEventListener('DOMContentLoaded', () => {
+  const { version, local_search, code_block, code_copy, lazyload } = KEEP.theme_config
 
-		button.on( 'click', function() {
-			secondary.toggleClass( 'toggled-on' );
-			secondary.trigger( 'resize' );
-			$( this ).toggleClass( 'toggled-on' );
-			if ( $( this, secondary ).hasClass( 'toggled-on' ) ) {
-				$( this ).attr( 'aria-expanded', 'true' );
-				secondary.attr( 'aria-expanded', 'true' );
-			} else {
-				$( this ).attr( 'aria-expanded', 'false' );
-				secondary.attr( 'aria-expanded', 'false' );
-			}
-		} );
-	} )();
-	
-	footer = $( '#infinite-footer' );
-	setInterval( function() {
-			// Reveal footer
-		if ( $(window).scrollTop() >= 350 )
-			footer.animate( { 'bottom': 0 }, 'fast' );
-		else if ( $(window).scrollTop() < 350 )
-			footer.animate( { 'bottom': '-50px' }, 'fast' );
-		}, 250 );
+  KEEP.themeInfo = {
+    theme: `Keep v${version}`,
+    author: 'XPoet',
+    repository: 'https://github.com/XPoet/hexo-theme-keep'
+  }
+
+  KEEP.localStorageKey = 'KEEP-THEME-STATUS'
+
+  KEEP.styleStatus = {
+    isExpandPageWidth: false,
+    isDark: false,
+    fontSizeLevel: 0,
+    isShowToc: true
+  }
+
+  // print theme base info
+  KEEP.printThemeInfo = () => {
+    console.log(
+      `\n %c ${KEEP.themeInfo.theme} %c ${KEEP.themeInfo.repository} \n`,
+      `color: #fadfa3; background: #333; padding: 6px 0;`,
+      `padding: 6px 0;`
+    )
+  }
+
+  // set styleStatus to localStorage
+  KEEP.setStyleStatus = () => {
+    localStorage.setItem(KEEP.localStorageKey, JSON.stringify(KEEP.styleStatus))
+  }
+
+  // get styleStatus from localStorage
+  KEEP.getStyleStatus = () => {
+    let temp = localStorage.getItem(KEEP.localStorageKey)
+    if (temp) {
+      temp = JSON.parse(temp)
+      for (let key in KEEP.styleStatus) {
+        KEEP.styleStatus[key] = temp[key]
+      }
+      return temp
+    } else {
+      return null
+    }
+  }
+
+  KEEP.refresh = () => {
+    KEEP.initUtils()
+    KEEP.initHeaderShrink()
+    KEEP.initModeToggle()
+    KEEP.initBack2Top()
+
+    if (local_search?.enable === true) {
+      KEEP.initLocalSearch()
+    }
+
+    if (
+      code_block?.tools?.enable === true ||
+      code_block?.enable === true ||
+      code_copy?.enable === true
+    ) {
+      KEEP.initCodeBlockTools()
+    }
+
+    if (lazyload?.enable === true) {
+      KEEP.initLazyLoad()
+    }
+  }
+
+  KEEP.printThemeInfo()
+  KEEP.refresh()
 })
