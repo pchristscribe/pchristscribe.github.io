@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>P. Christopher Schreiber&#39;s</title>
+  
+  
+  <link href="https://pcschreiber.com/atom.xml" rel="self"/>
+  
+  <link href="https://pcschreiber.com/"/>
+  <updated>2023-02-01T00:49:53.000Z</updated>
+  <id>https://pcschreiber.com/</id>
+  
+  <author>
+    <name>P. Christopher Schreiber</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>igloo</title>
+    <link href="https://pcschreiber.com/2023/01/31/igloo/"/>
+    <id>https://pcschreiber.com/2023/01/31/igloo/</id>
+    <published>2023-02-01T00:49:53.000Z</published>
+    <updated>2023-02-01T00:49:53.000Z</updated>
+    
+    
+    
+    
+    
+    <category term="Work" scheme="https://pcschreiber.com/tags/Work/"/>
+    
+    <category term="Resume" scheme="https://pcschreiber.com/tags/Resume/"/>
+    
+  </entry>
+  
+</feed>

@@ -489,6 +489,9 @@ button {
   transition-property: color, background, box-shadow, border-color, transform;
 }
 .btn:hover {
+  transform: scaleX(1.06) scaleY(1.06);
+}
+.btn:hover {
   color: var(--background-color-1);
   background: var(--primary-color);
 }
