@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="1.296891"
-     inkscape:cx="670.44956"
-     inkscape:cy="413.68164"
+     inkscape:zoom="1.0543273"
+     inkscape:cx="523.55659"
+     inkscape:cy="414.00807"
      inkscape:window-width="1937"
      inkscape:window-height="1095"
      inkscape:window-x="0"
@@ -33,7 +33,7 @@
      inkscape:window-maximized="0"
      inkscape:current-layer="svg96" />
   <path
-     d="m 48.337987,731.68204 a 150,150 0 1 1 300.000003,0 q 0,20 -20,20 h -130 -130.000003 q -20,0 -20,-20"
+     d="m 152.66992,479.38847 a 150,150 0 1 1 299.99996,0 q 0,20 -20,20 H 302.66992 172.66991 q -19.99999,0 -19.99999,-20"
      stroke="#fdd663"
      fill="rgb(253, 214, 99)"
      id="path84"
@@ -54,13 +54,13 @@
        repeatCount="indefinite" />
   </path>
   <circle
-     cx="200"
-     cy="150"
+     cx="270.18692"
+     cy="216.39305"
      r="20"
      stroke="#1a73e8"
      fill="#1a73e8"
      id="circle86"
-     style="fill:#e3eefc;fill-opacity:0.87078649">
+     style="fill:#a02c89;fill-opacity:0.870786">
     <animateMotion
        path="M 0 0 L 40 20 Z"
        dur="5s"
@@ -68,8 +68,8 @@
   </circle>
   <!-- 三角形 -->
   <path
-     d="M 165 580 L 270 580 Q275 578 270 570 L 223 483 Q220 480 217 483 L 165 570 Q160 578 165 580"
-     stroke="rgb(238, 103, 92)"
+     d="m 509.93641,42.999463 h 105 q 5,-2 0,-10 l -47,-87 q -3,-3 -6,0 l -52,87 q -5,8 0,10"
+     stroke="#ee675c"
      fill="rgb(238, 103, 92)"
      id="path88"
      style="fill:#ff2a2a;fill-opacity:1">
@@ -90,18 +90,18 @@
      stroke="#f1f3f4"
      fill="#f1f3f4"
      id="circle90"
-     style="fill:#cd87de">
+     style="fill:#e32c14;stroke:#1c931c;stroke-opacity:0.88082904;fill-opacity:1">
     <animateMotion
        path="M 0 0 L -20 40 Z"
        dur="9s"
        repeatCount="indefinite" />
   </circle>
   <path
-     d="m 412.6349,506.95084 a 40,40 0 1 1 80,0 v 80 a 40,40 0 1 1 -80,0 z"
+     d="m 877.38625,649.22165 a 40,40 0 1 1 80,0 v 80 a 40,40 0 1 1 -80,0 z"
      stroke="#f1f3f4"
      fill="#f1f3f4"
      id="path92"
-     style="fill:#c18813;fill-opacity:0.774892">
+     style="fill:#a02c5a;fill-opacity:0.774892">
     <animateMotion
        path="M 140 390 L 180 360 L 140 390"
        dur="20s"
@@ -118,8 +118,8 @@
        repeatCount="indefinite" />
   </path>
   <rect
-     x="521.01764"
-     y="375.84912"
+     x="84.293037"
+     y="658.68323"
      rx="40"
      ry="40"
      width="100"
@@ -127,7 +127,7 @@
      stroke="#81c995"
      fill="#81c995"
      id="rect94"
-     style="fill:#ff5555">
+     style="fill:#8800aa">
     <animateTransform
        attributeType="XML"
        attributeName="transform"
@@ -152,7 +152,9 @@
        repeatCount="indefinite" />
   </circle>
   <g
-     id="g262">
+     id="g262"
+     style="fill:#d4aa00"
+     transform="translate(-336.7076,269.36607)">
     <rect
        x="618.61511"
        y="378.14789"
@@ -163,7 +165,7 @@
        stroke="#81c995"
        fill="#81c995"
        id="rect82"
-       style="fill:#338000;stroke:#535d6c">
+       style="fill:#d39919;stroke:#535d6c;fill-opacity:0.92227972">
       <animateTransform
          attributeType="XML"
          attributeName="transform"
@@ -184,7 +186,7 @@
        stroke="#81c995"
        fill="#81c995"
        id="rect13004"
-       style="fill:#8d5fd3;stroke:#535d6c">
+       style="opacity:0.8;fill:#008000;stroke:#535d6c">
       <animateTransform
          attributeType="XML"
          attributeName="transform"
@@ -197,7 +199,7 @@
     </rect>
   </g>
   <path
-     d="m 779.11531,259.93132 a 62.141215,53.383836 0 1 1 124.28238,0 v 106.76767 a 62.141215,53.383836 0 1 1 -124.28238,0 z"
+     d="m 697.54671,258.98285 a 62.141215,53.383836 0 1 1 124.28239,0 v 106.76767 a 62.141215,53.383836 0 1 1 -124.28239,0 z"
      stroke="#f1f3f4"
      fill="#f1f3f4"
      id="path224"
@@ -214,6 +216,27 @@
        dur="30s"
        type="rotate"
        values="0 140 390; -60 140 390; 0 140 390"
+       keyTimes="0 ; 0.5 ; 1"
+       repeatCount="indefinite" />
+  </path>
+  <path
+     d="m 933.26245,206.2285 a 150,150 0 1 1 300.00005,0 q 0,20 -20,20 h -130 -130.00005 q -20,0 -20,-20"
+     stroke="#fdd663"
+     fill="rgb(253, 214, 99)"
+     id="path905"
+     style="fill:#d39919;fill-opacity:0.92227972">
+    <animateMotion
+       path="M 800 -200 L 800 -300 L 800 -200"
+       dur="20s"
+       begin="0s"
+       repeatCount="indefinite" />
+    <animateTransform
+       attributeType="XML"
+       attributeName="transform"
+       begin="0s"
+       dur="30s"
+       type="rotate"
+       values="0 210 530 ; -30 210 530 ; 0 210 530"
        keyTimes="0 ; 0.5 ; 1"
        repeatCount="indefinite" />
   </path>
